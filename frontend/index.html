@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">📅 Booking App</a>
+            <ul class="navbar-links" id="authLinks">
+                <!-- Links will be dynamically injected -->
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Activities Section -->
+    <section class="activities">
+        <h2>Available Activities</h2>
+        <div id="activitiesList" class="activities-grid">
+            <!-- Activities will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Book Activity Section -->
+    <section class="book-activity">
+        <h2>Book an Activity</h2>
+        <form id="bookActivityForm">
+            <div class="form-group">
+                <label for="activityName">Activity Name:</label>
+                <input type="text" id="activityName" placeholder="Enter Activity Name" required />
+            </div>
+            <div class="form-group">
+                <label for="bookingDate">Date:</label>
+                <input type="date" id="bookingDate" required />
+            </div>
+            <div class="form-group">
+                <label for="timeSlot">Time Slot:</label>
+                <select id="timeSlot" required>
+                    <option value="">-- Select a Time Slot --</option>
+                    <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                    <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                    <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+                    <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Book Activity</button>
+        </form>
+    </section>
+
+    <!-- My Bookings Section -->
+    <section class="my-bookings">
+        <h2>My Bookings</h2>
+        <div id="myBookingsList" class="bookings-grid">
+            <!-- Bookings will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Booking App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
