@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+
+# Debug files
+.vscode/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# NPM packages lock file
+package-lock.json
+
+# Coverage directory
+coverage/
